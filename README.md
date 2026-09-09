@@ -1,5 +1,7 @@
 
 # minGPT
+A lightweight educational PyTorch implementation of the GPT architecture.
+This repository is designed for learning and experimentation.
 
 ![mingpt](mingpt.jpg)
 
@@ -145,3 +147,7 @@ Papers + some implementation notes:
 ### License
 
 MIT
+
+### Git Lab
+
+This repository is being used to practice Git branching, merging, and pull requests.

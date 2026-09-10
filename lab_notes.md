@@ -1,2 +1,2 @@
- Lab 3 notes
+# Lab 3 notes
 Andrew ID: jtvu

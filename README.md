@@ -1,4 +1,4 @@
-This project is being edited by "Preet Patel"
+This project is being edited by "Patel Patel" and he is a student enrolled Machine Learning in Production course
 # minGPT
 
 ![mingpt](mingpt.jpg)

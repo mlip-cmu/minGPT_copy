@@ -1,3 +1,2 @@
 # Lab 3 notes
 Andrew ID: zijiewei
-TYPO: delete me

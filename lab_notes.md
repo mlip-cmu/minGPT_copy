@@ -1,2 +1,3 @@
 # Lab 3 notes
 Andrew ID: irisliu
+TYPO: Delete me

@@ -1,4 +1,4 @@
-This project is being edited by "Patel Patel" and he is a student enrolled Machine Learning in Production course
+This project is being edited by "Patel Patel" and he is a student enrolled Machine Learning in Production course. I solved the merge conflict yayy! Oh no, I forgot to add this sentence!
 # minGPT
 
 ![mingpt](mingpt.jpg)

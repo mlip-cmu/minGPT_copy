@@ -1,9 +1,9 @@
-
 # minGPT
 
-![mingpt](mingpt.jpg)
-
-A PyTorch re-implementation of [GPT](https://github.com/openai/gpt-2), both training and inference. minGPT tries to be small, clean, interpretable and educational, as most of the currently available GPT model implementations can a bit sprawling. GPT is not a complicated model and this implementation is appropriately about 300 lines of code (see [mingpt/model.py](mingpt/model.py)). All that's going on is that a sequence of indices feeds into a [Transformer](https://arxiv.org/abs/1706.03762), and a probability distribution over the next index in the sequence comes out. The majority of the complexity is just being clever with batching (both across examples and over sequence length) for efficiency.
+mingpt  
+this is my second change from main and this is my first change from merge-switch branch. A PyTorch re-implementation of [GPT](https://github.com/openai/gpt-2), both training and inference. minGPT tries to be small, clean, interpretable and educational, as most of the currently available GPT model implementations can a bit sprawling. GPT is not a complicated model and this implementation is appropriately about 300 lines of code (see [mingpt/model.py](mingpt/model.py)). All that's going on is that a sequence of indices feeds into a [Transformer](https://arxiv.org/abs/1706.03762), and a probability distribution over the next index in the sequence comes out. The majority of the complexity is just being clever with batching (both across examples and over sequence length) for efficiency. +++++Added this part to test amend++++++  
+  
+###pull request from local main branch####
 
 **note (Jan 2023)**: though I may continue to accept and change some details, minGPT is in a semi-archived state. For more recent developments see my rewrite [nanoGPT](https://github.com/karpathy/nanoGPT). Basically, minGPT became referenced across a wide variety of places (notebooks, blogs, courses, books, etc.) which made me less willing to make the bigger changes I wanted to make to move the code forward. I also wanted to change the direction a bit, from a sole focus on education to something that is still simple and hackable but has teeth (reproduces medium-sized industry benchmarks, accepts some tradeoffs to gain runtime efficiency, etc).
 
@@ -73,7 +73,7 @@ python -m unittest discover tests
 - reproduce some benchmarks in projects/, e.g. text8 or other language modeling
 - proper logging instead of print statement amateur hour haha
 - i probably should have a requirements.txt file...
-- it should be possible to load in many other model weights other than just gpt2-\*
+- it should be possible to load in many other model weights other than just gpt2-
 
 ### References
 
@@ -105,7 +105,7 @@ Papers + some implementation notes:
 
 - LayerNorm was moved to the input of each sub-block, similar to a pre-activation residual network
 - an additional layer normalization was added after the final self-attention block.
-- modified initialization which accounts for the accumulation on the residual path with model depth is used. We scale the weights of residual layers at initialization by a factor of 1/√N where N is the number of residual layers. (weird because in their released code i can only find a simple use of the old 0.02... in their release of image-gpt I found it used for c_proj, and even then only for attn, not for mlp. huh. https://github.com/openai/image-gpt/blob/master/src/model.py)
+- modified initialization which accounts for the accumulation on the residual path with model depth is used. We scale the weights of residual layers at initialization by a factor of 1/√N where N is the number of residual layers. (weird because in their released code i can only find a simple use of the old 0.02... in their release of image-gpt I found it used for c_proj, and even then only for attn, not for mlp. huh. [https://github.com/openai/image-gpt/blob/master/src/model.py](https://github.com/openai/image-gpt/blob/master/src/model.py))
 - the vocabulary is expanded to 50,257
 - increase the context size from 512 to 1024 tokens
 - larger batchsize of 512 is used

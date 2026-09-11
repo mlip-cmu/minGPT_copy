@@ -1,4 +1,4 @@
-
+This project is being edited by "Preet Patel"
 # minGPT
 
 ![mingpt](mingpt.jpg)

@@ -1,5 +1,6 @@
 
-# minGPT (main version)
+# minGPT (main version + branch version)
+Something amended
 
 ![mingpt](mingpt.jpg)
 

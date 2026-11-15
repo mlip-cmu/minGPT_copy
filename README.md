@@ -1,5 +1,6 @@
 
-# minGPT
+# minGPT (main version + branch version)
+Something amended
 
 ![mingpt](mingpt.jpg)
 
@@ -145,3 +146,5 @@ Papers + some implementation notes:
 ### License
 
 MIT
+
+Lab 3 PR exercise
